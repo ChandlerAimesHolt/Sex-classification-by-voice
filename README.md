@@ -12,7 +12,7 @@ From what I could tell most of the variables within the dataset were coded in a 
 <img width="156" alt="image" src="https://github.com/user-attachments/assets/4040f1a3-8eec-433f-865b-f61dee15aa60" /> <img width="409" alt="image" src="https://github.com/user-attachments/assets/730be7e9-1661-4129-afeb-1488061ed95a" />  <img width="406" alt="image" src="https://github.com/user-attachments/assets/9927d002-44f9-4ed0-81d0-bde01ab02a9a" />
 
 The initial threshold for feature selection was any variable that scored above a |+-0.2|. Then the remaining variables were tested for correlation with the selected variables. If a variables had a higher than a |-+0.4| with the selected variable it was removed to reduce multicollinearity. The final result was the 11 features shown to the right most matrix above.
-##Pipeline and model creation
+## Pipeline and model creation
 The data pipeline that was made was pretty standard. The data did not need to be transformed, because it was already extremely clean and I did not have enough domain knowledge to confidently create my own features. The only changes that were made to the data in the pipeline is that all the features were scaled using the SimpleImputer function in Sklearn
 The two models that were used were logistic and lasso regression. I chose these two because they are the most standard models to use for making predictions on classifications and I felt like they would serve as a good baseline in case I needed to make adjustments.
 ## Conclusion
