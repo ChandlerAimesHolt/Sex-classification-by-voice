@@ -9,6 +9,7 @@ https://www.kaggle.com/datasets/murtadhanajim/vocal-gender-features
 The data set that was used consists of over 16000 data points and 44 seperate variables that describe vocal patterns. After some data exploration the 44 variables were reduced to the top 11 most important features. The data was then transformed through a pipeline, which mostly functioned as a scaler since the data was already very clean. After testing a few models a logistic regression model had by far the most success predicting genders. The logistic regression model was then tested with the tests sets, which resulted in an accuracy score of 99.3%
 ## Feature selection methodology 
 From what I could tell most of the variables within the dataset were coded in a way that only the person who originally coded the statisitics would know exactly what they mean. So instead of trying to consult an expert I focused on prioritizing selecting the features that showed the most direct correlation to the features while also removing variables that have too much correlation with that feature that was just selected. 
+
 <img width="156" alt="image" src="https://github.com/user-attachments/assets/4040f1a3-8eec-433f-865b-f61dee15aa60" />
 <img width="409" alt="image" src="https://github.com/user-attachments/assets/730be7e9-1661-4129-afeb-1488061ed95a" /> 
 <img width="406" alt="image" src="https://github.com/user-attachments/assets/9927d002-44f9-4ed0-81d0-bde01ab02a9a" />
